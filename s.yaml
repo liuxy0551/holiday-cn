@@ -1,0 +1,54 @@
+# ------------------------------------
+#   官方手册: https://manual.serverless-devs.com/user-guide/aliyun/#fc3
+#   常见小贴士: https://manual.serverless-devs.com/user-guide/tips/
+#   有问题快来钉钉群问一下吧：33947367
+# ------------------------------------
+
+edition: 3.0.0
+name: fc3-example
+access: aliyun
+resources:
+    fcDemo:
+        component: fc3
+        actions:
+            pre-deploy: # 在 deploy 之前运行
+                - run: yarn
+                  path: ./
+        props:
+            region: cn-hangzhou
+            handler: index.handler
+            role: ""
+            description: ""
+            timeout: 20
+            diskSize: 512
+            internetAccess: true
+            layers:
+                - acs:fc:cn-hangzhou:official:layers/Nodejs16/versions/2
+            customRuntimeConfig:
+                port: 9000
+                command:
+                    - yarn
+                    - dev
+            functionName: holiday-cn
+            runtime: custom.debian10
+            cpu: 0.05
+            instanceConcurrency: 10
+            memorySize: 128
+            environmentVariables:
+                PATH: >-
+                    /opt/nodejs16/bin:/usr/local/bin/apache-maven/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ruby/bin:/opt/bin:/code:/code/bin
+                LD_LIBRARY_PATH: >-
+                    /code:/code/lib:/usr/local/lib:/opt/lib:/opt/php8.1/lib:/opt/php8.0/lib:/opt/php7.2/lib
+                NODE_PATH: /opt/nodejs/node_modules
+            code: ./
+            triggers:
+                - triggerConfig:
+                      methods:
+                          - GET
+                          - POST
+                      authType: anonymous
+                      disableURLInternet: false
+                  triggerName: defaultTrigger
+                  description: ""
+                  qualifier: LATEST
+                  triggerType: http

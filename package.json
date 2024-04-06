@@ -1,0 +1,20 @@
+{
+  "name": "holiday-cn",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuxy0551/holiday-cn"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
