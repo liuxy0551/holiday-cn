@@ -6,15 +6,15 @@
 
 ## 使用方式
 
-http://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-05
+https://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-05
 
 ### 参数（请求示例）:
 
 -   date: 日期查询，日期值会被 `dayjs` 解析，所以值需要是能被 `new Date()` 解析的日期格式
-    -   [date=2024-04-07](http://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-05) 查询具体日期
-    -   [date=2024-04-01,2024-04-05](http://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-01~2024-04-05) 查询日期段，以 `~` 连接两个日期查询日期段
-    -   [date=2024-04-03,2024-04-05](http://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-01,2024-04-03,2024-04-05) 数组批量查询，以 `,` 英文逗号连接，查询多个日期
-    -   [date 为空](http://holiday-cn.liuxianyu.cn/api/holiday) 查询今日
+    -   [date=2024-04-07](https://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-05) 查询具体日期
+    -   [date=2024-04-01,2024-04-05](https://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-01~2024-04-05) 查询日期段，以 `~` 连接两个日期查询日期段
+    -   [date=2024-04-03,2024-04-05](https://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-01,2024-04-03,2024-04-05) 数组批量查询，以 `,` 英文逗号连接，查询多个日期
+    -   [date 为空](https://holiday-cn.liuxianyu.cn/api/holiday) 查询今日
 
 ### 返回值:
 
