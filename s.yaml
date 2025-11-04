@@ -18,7 +18,7 @@ resources:
             region: cn-hangzhou
             handler: index.handler
             role: ""
-            description: ""
+            description: 节假日 API
             timeout: 20
             diskSize: 512
             internetAccess: true
@@ -29,6 +29,7 @@ resources:
                 command:
                     - yarn
                     - dev
+                healthCheckConfig: {}
             functionName: holiday-cn
             runtime: custom.debian10
             cpu: 0.05
@@ -52,3 +53,5 @@ resources:
                   description: ""
                   qualifier: LATEST
                   triggerType: http
+            concurrencyConfig:
+                reservedConcurrency: 10

@@ -61,6 +61,11 @@ yarn dev
 
 &emsp;&emsp;本服务通过阿里云的函数计算部署，属于 Serverless 的一种实现，具体可点击 https://www.aliyun.com/product/fc 查看。项目下的 `s.yaml` 为部署的配置文件，部署工具为 [Serverless Devs](https://help.aliyun.com/zh/fc/developer-reference/serverless-devs/)。
 
+
+```sh
+s deploy
+```
+
 ## 注意事项
 
 -   年份是按照国务院文件标题年份而不是日期年份，12 月份的日期可能会被下一年的文件影响，因此应检查两个文件。
