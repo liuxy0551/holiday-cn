@@ -17,6 +17,7 @@ const _2022 = require("./2022.json");
 const _2023 = require("./2023.json");
 const _2024 = require("./2024.json");
 const _2025 = require("./2025.json");
+const _2026 = require("./2026.json");
 
 module.exports = {
     _2007,
@@ -38,4 +39,5 @@ module.exports = {
     _2023,
     _2024,
     _2025,
+    _2026,
 };
