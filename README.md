@@ -41,18 +41,18 @@ https://holiday-cn.liuxianyu.cn/api/holiday?date=2024-04-05
 
 ## 项目开发
 
-使用 `yarn` 进行包管理
+使用 `pnpm` 进行包管理
 
 ```sh
 git clone https://github.com/liuxy0551/holiday-cn.git
 cd holiday-cn
-yarn
+pnpm i
 ```
 
 ### 开发
 
 ```sh
-yarn dev
+pnpm dev
 ```
 
 浏览器访问: http://localhost:3050/api/holiday

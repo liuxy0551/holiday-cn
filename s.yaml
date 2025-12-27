@@ -12,7 +12,7 @@ resources:
         component: fc3
         actions:
             pre-deploy: # 在 deploy 之前运行
-                - run: yarn
+                - run: npm install
                   path: ./
         props:
             region: cn-hangzhou
@@ -27,8 +27,7 @@ resources:
             customRuntimeConfig:
                 port: 3050
                 command:
-                    - yarn
-                    - dev
+                    - npm run dev
                 healthCheckConfig: {}
             functionName: holiday-cn
             runtime: custom.debian10
