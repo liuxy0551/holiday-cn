@@ -55,7 +55,7 @@ yarn
 yarn dev
 ```
 
-浏览器访问: http://localhost:9000/api/holiday
+浏览器访问: http://localhost:3050/api/holiday
 
 ### 部署
 

@@ -3,7 +3,7 @@ const dayjs = require("dayjs");
 const dataList = require("./data");
 
 const app = express();
-const port = 9000;
+const port = 3050;
 
 const getResultList = (dateStr) => {
     if (dateStr?.includes(",")) {

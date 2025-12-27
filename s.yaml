@@ -25,7 +25,7 @@ resources:
             layers:
                 - acs:fc:cn-hangzhou:official:layers/Nodejs16/versions/2
             customRuntimeConfig:
-                port: 9000
+                port: 3050
                 command:
                     - yarn
                     - dev
